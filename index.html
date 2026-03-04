@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Base Pages</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=IBM+Plex+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background: #0A0A0F;
+      color: #fff;
+      font-family: 'IBM Plex Mono', 'Courier New', monospace;
+      padding: 48px 32px;
+    }
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    .label {
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    .pages {
+      display: grid;
+      gap: 12px;
+      max-width: 640px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 20px 24px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .page-link:hover {
+      background: rgba(255,255,255,0.06);
+      border-color: rgba(255,255,255,0.12);
+    }
+
+    .page-title {
+      font-size: 14px;
+      font-weight: 500;
+      font-family: 'IBM Plex Sans', sans-serif;
+      margin-bottom: 6px;
+    }
+
+    .page-desc {
+      font-size: 11px;
+      color: rgba(255,255,255,0.35);
+      line-height: 1.5;
+    }
+
+    .page-tag {
+      display: inline-block;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.2);
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="label">BASE PAGES</div>
+    <h1>Страницы</h1>
+  </header>
+
+  <div class="pages">
+    <a href="cursor-vs-claude-code/" class="page-link">
+      <div class="page-title">Cursor vs Claude Code</div>
+      <div class="page-desc">Сравнение двух AI-инструментов по 6 категориям: контекст, автономность, стоимость, качество кода, UX и мульти-файловость.</div>
+      <div class="page-tag">СРАВНЕНИЕ</div>
+    </a>
+  </div>
+</body>
+</html>
